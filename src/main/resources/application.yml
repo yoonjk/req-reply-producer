@@ -1,0 +1,9 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+kafka: 
+  bootstrap-servers: localhost:9092
+  topic.request-topic: request-topic
+  topic.requestreply-topic: requestreply-topic
+  consumergroup: ${REQUEST_REPLY_GROUP:requestreplygorup}
+
